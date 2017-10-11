@@ -8,9 +8,6 @@ testing tool for Clojure that is broadly compatible with
 Tests are written in a plain language format that is accessible to both the developer and user
 and forms a common ground for establishing and validating the behaviour of a system.
 
-Schmorgurken embraces the standard core Clojure testing library (clojure.test) and hence tests 
-can be run using the standard lein test command.
-
 ## Installation
 
 To install Schmorgurken, just add the following to your `project.clj` dependencies
@@ -29,10 +26,16 @@ earlier versions.
 Currently there is no support for Clojurescript although this may be added in a future
 release.
 
+
 ## Getting started
 
 This is not intended to be a full tutorial to learn Gherkin, so only the essentials
 are covered here.
+
+### Running 
+
+Schmorgurken embraces the standard core Clojure testing library (clojure.test) and hence tests 
+can be run using the standard **lein test** command.
 
 ### Features
 A *feature file* contains a single *Feature* element which *must* be the first 
