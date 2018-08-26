@@ -10,10 +10,12 @@ and forms a common ground for establishing and validating the behaviour of a sys
 
 ## Installation
 
+[![Clojars Project](https://img.shields.io/clojars/v/schmorgurken.svg)](https://clojars.org/schmorgurken)
+
 To install Schmorgurken, just add the following to your `project.clj` dependencies
 
 ```clojure
-[schmorgurken.schmorgurken "0.1.0"]
+[schmorgurken.schmorgurken "0.1.1"]
 ```
 
 ### Requirements
