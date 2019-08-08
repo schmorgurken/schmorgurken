@@ -505,6 +505,4 @@
                                                           "Then I should have <left> cucumbers\n"
                                                           "Hello") "test"))))))
 
-(require 'pjstadig.humane-test-output)
-(pjstadig.humane-test-output/activate!)
 (run-tests)

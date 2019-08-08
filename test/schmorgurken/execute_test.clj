@@ -61,6 +61,4 @@
                             [(Given #"^a single parameter (.*)$"
                                     (fn [_] (println "hello")))])))))
 
-(require 'pjstadig.humane-test-output)
-(pjstadig.humane-test-output/activate!)
 (run-tests)

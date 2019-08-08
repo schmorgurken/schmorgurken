@@ -64,6 +64,4 @@
          (Then #"^the number of users should now be (.*)$"
                (fn [count expected-count] (is (= (bigint expected-count) count)))))
 
-(require 'pjstadig.humane-test-output)
-(pjstadig.humane-test-output/activate!)
 (run-tests)

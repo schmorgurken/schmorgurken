@@ -78,6 +78,4 @@
                                    "|\\ Fred | London \\ \\ |     020 7123 4567   |\n"
                                    ) "test"))))))
 
-(require 'pjstadig.humane-test-output)
-(pjstadig.humane-test-output/activate!)
 (run-tests)
