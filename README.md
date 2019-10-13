@@ -15,12 +15,12 @@ and forms a common ground for establishing and validating the behaviour of a sys
 To install Schmorgurken, just add the following to your `project.clj` dependencies
 
 ```clojure
-[schmorgurken.schmorgurken "0.1.1"]
+[schmorgurken.schmorgurken "0.1.2"]
 ```
 
 ### Requirements
 
-Schmorgurken is built and tested with Clojure 1.8 and JDK 8 although it should work with 
+Schmorgurken is built and tested with Clojure 1.10 and JDK 8 although it should work with 
 earlier versions.  
 
 ### Clojurescript support
@@ -67,7 +67,7 @@ Scenario: Market Order
 
 ### Steps
 Steps are defined by one of the keywords - *Given*, *When*, *Then* or *And*.  
-Schmorguken considers them all equivalent, but the scenario should use the keywords
+Schmorgurken considers them all equivalent, but the scenario should use the keywords
 appropriately to describe the setting up (*Given*), running the testing scenario (*When*)
 and the validation (*Then*). 
 
@@ -103,7 +103,7 @@ in the regex, plus one extra to pass through the state.
 
 ### Regex as glue
 Regular expressions are used to match text elements in the feature file to link to the stepdef handlers
-in the test code.  Paramaters in the step definitions can be extracted by match groups in the regex
+in the test code.  Parameters in the step definitions can be extracted by match groups in the regex
 definition.
 
 ### State
@@ -189,7 +189,7 @@ Scenario: feeding a suckler cow
 ```
 
 ### Tables
-Tables in Schmorgunken are pipe-character delimited.  As the table is parsed, the 
+Tables in Schmorgurken are pipe-character delimited.  As the table is parsed, the 
 elements are stripped of leading and trailing spaces.
 
 The first row is the title row and defines the parameter names.

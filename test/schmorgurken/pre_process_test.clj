@@ -125,7 +125,5 @@
                                  "  # with something that looks like a comment\n"
                                  "  \"\"\"") "test")))))
 
-(require 'pjstadig.humane-test-output)
-(pjstadig.humane-test-output/activate!)
 (run-tests)
 

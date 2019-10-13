@@ -18,7 +18,7 @@
                (fn [_ dirn qty cross ord-type] (println dirn qty cross ord-type)))
 
          (Then #"^a trade should be made at ([\d.]+)$"
-               (fn [_ price dummy] (println price)))
+               (fn [_ price _] (println price)))
 
          (And #"^my position should show (\w) (\d+) (\w{6}) at ([\d.]+)$"
               (fn [_ ls qty cross price] (println ls qty cross price)))]]
@@ -61,6 +61,4 @@
                             [(Given #"^a single parameter (.*)$"
                                     (fn [_] (println "hello")))])))))
 
-(require 'pjstadig.humane-test-output)
-(pjstadig.humane-test-output/activate!)
 (run-tests)

@@ -1,6 +1,5 @@
 (ns schmorgurken.execute
-  (:require (clojure [string :as s]
-                     [test :refer :all])
+  (:require (clojure [test :refer :all])
             (schmorgurken [parse :as pa]
                           [pre-process :as pp])
             (clojure.java [io :as io]))
@@ -23,7 +22,7 @@
       (:table step) (apply func state (:table step) args)
       (:pystring step) (apply func state (:pystring step) args)
       :else (apply func state args))
-    (catch ArityException e
+    (catch ArityException _
       (throw (ex-info "The step handler function has the wrong arity (number of args) when matching:" step)))))
 
 (defn- run-test-for-step
