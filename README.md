@@ -292,7 +292,7 @@ each line.  All other formatting is preserved.
 
 ```gherkin
 Scenario: User entering free form text
-  Given: the user enters the following text into the web page
+  Given the user enters the following text into the web page
           """
           When the day has a blue sky
           then I feel much happier
@@ -305,7 +305,7 @@ Steps may also use the table format to describe data to be passed into the handl
 
 ```gherkin
 Scenario: Process a series of trades
-  Given: the following trades have been booked during the day
+  Given the following trades have been booked during the day
         | trade id | client | isin        | qty   | consideration |
         | 1        | CLI1   | UK010910291 | 1000  | GBP1000       |
         | 2        | CLI2   | US827387238 | 500   | USD2000       |
